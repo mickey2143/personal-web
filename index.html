@@ -9,35 +9,70 @@
       href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="font.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Me in 5 years</title>
+    <script src="./index.js" defer></script>
+    <title>Me in 2 Years</title>
   </head>
   <body>
-    <header data-testid>
+    <header >
       <nav>
-        <span class="logo">MeetMein5years</span>
+        <span class="logo">MeetMein2years</span>
       </nav>
     </header>
 
     <main>
       <section class="intro-section">
-        <h1>Meet Me in Next <span>Five</span> Years</h1>
-        <p class="lato-light">
-          This website contains my plans in Tech for the next five years
+        <div class="flex">
+            <div>
+                <h1>Meet Me in Next <span>Two</span> Years</h1>
+        <p >
+          This website contains my plans in Tech for the next Two years
         </p>
-        <a href="" class="btn">Know More</a>
+        <a href="#goals" class="btn">My Goals</a>
+            </div>
         <div class="profile">
-          <img src="./profile.png" alt="" />
+          <img src="./profile.png" alt="my profile picture" data-testid="slackProfilePicture"/>
         </div>
-        <div>
-          Slack Name Current Time (UTC) Day Slack Email Learn More
+        </div>
+        <div class="details">
+          <div class="info">
+            <h3>Slack Name</h4>
+            <span data-testid="slackDisplayName">mickel</span>
+          </div>
+          <div class="info">
+            <h3>Current Time (UTC)</h3>
+            <span id="time" data-testid="currentDay"></span>
+        </div>
+        <div class="info">
+            <h3>Day</h3>
+            <span id="day"></span>
+        </div>
+        <div class="info">
+            <h3>Slack Email</h3>
+            <a data-testid="slackEmail" href="mailto:animichael556@gmail.com">animichael556@gmail.com</a>
+            
+          </div>
+         <div class="info">
+             <h3>Special Links</h3>
+             
+                <a href="https://hng.tech/learn" target="_blank" data-testid="hngLink" >hng.tech/learn</a>
+             <a href="https://keyword.dog" target="_blank" data-testid="keywordLink" >keyword.dog</a>
+             <a href="https://scrapeanyweb.site" target="_blank" data-testid="scrapeanywebLink" >scrapeanyweb.site</a>
+             
+         </div>
         </div>
       </section>
 
-      <section class="goals">
-        <h2>Goals</h2>
+      <section class="goals" id="goals">
+        <h2>Goal</h2>
+
+        <div class="goal-box">
+            <p>First Goal learn soft skills needed to work in a remote job, afterwards become proficient in my web development skills by building projects that solve real time problems and upgrade my porfolio. Also connect with people who are into tech by attending tech meetups and hangouts. Start applying for remote jobs once my porfolio is ready</p>
+        </div>
       </section>
     </main>
+    <footer id="footer">
+        
+    </footer>
   </body>
 </html>
